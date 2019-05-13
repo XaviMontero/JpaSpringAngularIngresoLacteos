@@ -1,16 +1,15 @@
-import {ModuleWithProviders} from '@angular/core'; 
-import {Routes,RouterModule} from '@angular/router'; 
-
- 
-
-//component 
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import {RegistreComponent} from './components/registre/registre.component';
 import {LoginComponent} from './components/login/login.component'; 
- 
-const appRoutes: Routes=[
+const routes: Routes = [
     {path:'', component:LoginComponent},
     {path:'login',component:LoginComponent},
     {path:'registre',component:RegistreComponent}
 ];
-export const appRoutingProviders : any[] =[]; 
-export const routing:ModuleWithProviders=RouterModule.forRoot(appRoutes); 
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

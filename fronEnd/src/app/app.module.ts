@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { routing,appRoutingProviders } from './app.routing';
+import { AppRoutingModule  } from './app.routing';
 import { AppComponent } from './app.component';
-
+import {FormsModule} from '@angular/forms'; 
 //component 
 import {RegistreComponent} from './components/registre/registre.component';
 import {LoginComponent} from './components/login/login.component'; 
@@ -17,12 +17,13 @@ import {LoginComponent} from './components/login/login.component';
   ],
   imports: [
     BrowserModule,
-    routing,
+    AppRoutingModule,
+    FormsModule,
     
     NgbModule.forRoot()
   ],
   providers: [
-    appRoutingProviders
+    
   ],
   bootstrap: [AppComponent]
 })
