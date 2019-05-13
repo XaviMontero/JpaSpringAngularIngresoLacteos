@@ -4,6 +4,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule  } from './app.routing';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms'; 
+import {HttpClientModule} from '@angular/common/http'
 //component 
 import {RegistreComponent} from './components/registre/registre.component';
 import {LoginComponent} from './components/login/login.component'; 
@@ -19,6 +20,7 @@ import {LoginComponent} from './components/login/login.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     
     NgbModule.forRoot()
   ],
