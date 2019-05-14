@@ -23,6 +23,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/api/v1.0/user")
+@CrossOrigin(origins = "http://localhost:4200")
 @Api(description = "Crear Un usuario en linea ")
 public class UserController {
     public static final String API_DOC_ANEXO_1 = "Ver ficha técnica - Anexo 1";
