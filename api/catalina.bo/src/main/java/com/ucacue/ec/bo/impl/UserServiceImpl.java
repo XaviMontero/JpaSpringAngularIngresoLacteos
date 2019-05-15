@@ -2,7 +2,9 @@ package com.ucacue.ec.bo.impl;
 
 
 
+import com.ucacue.dto.model.PersonaDTO;
 import com.ucacue.dto.model.UsersDTO;
+import com.ucacue.ec.bo.GenericCRUDService;
 import com.ucacue.ec.persistence.entity.Persona;
 import com.ucacue.ec.persistence.entity.Users;
 import com.ucacue.ec.persistence.repository.BaseRepository;
@@ -15,6 +17,9 @@ public class UserServiceImpl extends  GenericCRUDServiceImpl<Users, UsersDTO>{
     @Qualifier("personaRepository")
     @Autowired
     private BaseRepository baseRepository;
+    @Qualifier("personaServiceImpl")
+    @Autowired
+    private GenericCRUDService<Persona, PersonaDTO> personaService;
     @Override
     public Users mapTo(UsersDTO userDTO) {
         Users userMapper = new Users();
@@ -28,10 +33,16 @@ public class UserServiceImpl extends  GenericCRUDServiceImpl<Users, UsersDTO>{
     }
 
     @Override
-    public UsersDTO build(Users domainObject) {
+    public UsersDTO build(Users userDTO) {
+        UsersDTO userMapper = new UsersDTO();
 
+        userMapper.setNombreUsuario(userDTO.getNombreUsuario());
+        userMapper.setEmail(userDTO.getEmail());
+        userMapper.setPassword(userDTO.getPasswords());
+        userMapper.setNombreUsuario(userDTO.getNombreUsuario());
+        userMapper.setPersonaDTO(  personaService.build(userDTO.getPersona()));
 
-        return null;
+        return userMapper;
     }
 
 

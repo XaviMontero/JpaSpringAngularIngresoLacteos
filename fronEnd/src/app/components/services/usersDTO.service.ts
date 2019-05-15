@@ -16,9 +16,12 @@ import {GLOBAL} from './global';
          console.log(params);
          let headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8'); 
          return this._http.post(this.url+'create-user',params,{headers:headers});
-
-
-          
      }
+   login(usersDTO: UsersDTO) : Observable<any> {
+        let params = JSON.stringify(usersDTO); 
+        console.log(params);
+        let headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8'); 
+        return this._http.post(this.url+usersDTO.nombreUsuario+"+"+usersDTO.password+'/login',params,{headers:headers});
+     } 
 
  }

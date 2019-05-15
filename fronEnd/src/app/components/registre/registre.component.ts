@@ -15,6 +15,7 @@ export class RegistreComponent implements OnInit {
     public usersDTO: UsersDTO;
     public personaDTO: PersonaDTO;
     public catalinaRespo : CatalinaResponseDTO;
+    public status: string; 
     constructor(private _router: Router, private _activatedRoute: ActivatedRoute, private _usersDTOservices: UsersDTOservices) {
         this.title = 'Hola Registre';
         this.personaDTO = new PersonaDTO("", "", "", "", "", "");
@@ -23,15 +24,24 @@ export class RegistreComponent implements OnInit {
     ngOnInit() {
         console.log("Cargado componentes");
     }
-    onSubmit() {
+    onSubmit(from) {
         this._usersDTOservices.registre(this.usersDTO).subscribe(
-
             response=>{
                 this.catalinaRespo = response; 
+                if (this.catalinaRespo.success){
+                    this.status="true"; 
+                    from.reset();
+
+                }else {
+                    this.status="false";
+                    from.reset();
+                }
             console.log("Su ingreso "+ this.catalinaRespo.success);
             },
             error=>{
-             console.log(error);
+                console.log("Su ingreso "+ this.catalinaRespo.success);
+             this.status="false";
+             from.reset();
             }
         );
     }

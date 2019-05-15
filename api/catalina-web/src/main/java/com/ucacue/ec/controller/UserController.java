@@ -5,6 +5,7 @@ import com.ucacue.dto.model.PersonaDTO;
 import com.ucacue.dto.model.UsersDTO;
 import com.ucacue.dto.response.CatalinaResponseDTO;
 import com.ucacue.ec.bo.GenericCRUDService;
+import com.ucacue.ec.bo.validations.CedulaValidar;
 import com.ucacue.ec.persistence.entity.Persona;
 import com.ucacue.ec.persistence.entity.Users;
 import io.swagger.annotations.Api;
@@ -33,15 +34,17 @@ public class UserController {
     @Qualifier("personaServiceImpl")
     @Autowired
     private GenericCRUDService<Persona, PersonaDTO> personaService;
+    @Autowired
+    private CedulaValidar cedulaValidar;
 
     @ApiOperation(value = "Almacena un usuario en base de datos ")
     @PostMapping(value = "create-user", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> insertDigitalCert(
             @Valid @ApiParam(value = API_DOC_ANEXO_1, required = true) @RequestBody UsersDTO userDTO) {
-        CatalinaResponseDTO<Object> response = new CatalinaResponseDTO<>();
-
-        if(personaService.getfindObject(userDTO.getPersonaDTO().getCedulaPersona())==null){
-            if(userService.getfindObject(userDTO.getNombreUsuario())==null){
+        CatalinaResponseDTO response = new CatalinaResponseDTO();
+        if(cedulaValidar.validadorDeCedula(userDTO.getPersonaDTO().getCedulaPersona())){
+            if(personaService.getfindObject(userDTO.getPersonaDTO().getCedulaPersona())==null){
+                 if(userService.getfindObject(userDTO.getNombreUsuario())==null){
                 personaService.saveOrUpdate(userDTO.getPersonaDTO());
                 userService.saveOrUpdate(userDTO);
                 response.setSuccess(true);
@@ -49,14 +52,16 @@ public class UserController {
             }else {
                 response.setSuccess(false);
                 return new ResponseEntity<>(response, HttpStatus.CONFLICT);
-
             }
-        }else {
-            response.setSuccess(false);
-            return new ResponseEntity<>(response, HttpStatus.CONFLICT);
-        }
+            }else {
+                response.setSuccess(false);
+                return new ResponseEntity<>(response, HttpStatus.CONFLICT);
+            }
 
-
+            }else {
+                response.setSuccess(false);
+                return new ResponseEntity<>(response, HttpStatus.CONFLICT);
+            }
     }
 
 
@@ -78,5 +83,25 @@ public class UserController {
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
         return (new ResponseEntity<Object>(personaService.getfindObject(cedula), headers, HttpStatus.OK));
+    }
+
+    @ApiOperation(value = "Ingreso al sistema con su login ")
+    @PostMapping(value = "{user}+{password}/login", produces = { MediaType.APPLICATION_JSON_VALUE,
+            MediaType.APPLICATION_JSON_VALUE })
+    public ResponseEntity<Object> getLogin(
+            @Valid @ApiParam(value = "Ingreso de usuario", required = true) @PathVariable("user") String user,@PathVariable("password")String password) {
+        CatalinaResponseDTO response = new CatalinaResponseDTO();
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
+
+            if (userService.login(user,password)!=null){
+                response.setSuccess(true);
+                return (new ResponseEntity<Object>(response, headers, HttpStatus.OK));
+
+            }else {
+                response.setSuccess(false);
+                return (new ResponseEntity<Object>(response, headers, HttpStatus.OK));
+
+            }
     }
 }

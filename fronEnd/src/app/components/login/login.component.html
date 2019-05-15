@@ -13,11 +13,20 @@
       width="150" height="150"
       viewBox="0 0 192 192"
       style=" fill:#000000;"><g transform="translate(1.92,1.92) scale(0.98,0.98)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#2ecc71" stroke="#2ecc71" stroke-width="4" stroke-linejoin="round"><g id="surface1 1"><path d="M192,24l-1.76562,0.90625c-22.23438,16.76562 -26.23438,39.09375 -26.23438,39.09375c-1.95312,13.92188 -7.96875,17.76562 -10.71875,21.125c-2.76563,3.35938 -10.5625,6.92188 -14.59375,9.34375c-4.04688,2.42187 -7.0625,7.40625 -9.21875,10.90625c-2.15625,3.48438 -5.46875,10.76562 -5.46875,10.76562c0,0 -11.03125,-1.07812 -27.4375,2.6875c-16.42188,3.76563 -39.82812,20.46875 -48.5625,25.17188c6,-1.875 12.07812,-4.35938 16.07812,-6.01562c24.39063,-10.01562 37.53125,-14.32812 55.92188,-13.98438c6.71875,0.125 13.79688,0.875 21.78125,2.10938c0,0 1.51562,0.10938 2.21875,1.60938c0.70312,1.51562 -14.35938,30.59375 -14.35938,30.59375c0,0 -0.79687,2.625 -5.64062,1.3125c-2.73438,-0.73438 -10.85938,-3.625 -24,-3.625c-24.5,0 -49.5,8.01562 -68.3125,8.01562c-25.96875,0 -31.6875,-12.01562 -31.6875,-12.01562c0,0 20.17188,0.82812 32,-4l4.51562,-8.73438c17.07813,-34.17187 40.3125,-51.26562 59.48438,-51.26562c16.3125,0 23.82812,14.96875 26.8125,22.03125c4.5625,-6.23438 12.23438,-23.09375 12.23438,-23.09375c23.8125,-46.20312 47.92188,-59 52.01562,-61.125c4.07812,-2.10938 4.9375,-1.8125 4.9375,-1.8125z"></path></g></g><path d="M0,192v-192h192v192z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g fill="#2ecc71" stroke="none" stroke-width="1" stroke-linejoin="miter"><g id="surface1"><path d="M187.0625,25.8125c-4.09375,2.125 -28.20312,14.92188 -52.01562,61.125c0,0 -7.67188,16.85938 -12.23438,23.09375c-2.98438,-7.0625 -10.5,-22.03125 -26.8125,-22.03125c-19.17188,0 -42.40625,17.09375 -59.48438,51.26562l-4.51562,8.73438c-11.82812,4.82812 -32,4 -32,4c0,0 5.71875,12.01562 31.6875,12.01562c18.8125,0 43.8125,-8.01562 68.3125,-8.01562c13.14062,0 21.26562,2.89062 24,3.625c4.84375,1.3125 5.64062,-1.3125 5.64062,-1.3125c0,0 15.0625,-29.07812 14.35938,-30.59375c-0.70312,-1.5 -2.21875,-1.60938 -2.21875,-1.60938c-7.98438,-1.23438 -15.0625,-1.98438 -21.78125,-2.10938c-18.39062,-0.34375 -31.53125,3.96875 -55.92188,13.98438c-4,1.65625 -10.07812,4.14062 -16.07812,6.01562c8.73438,-4.70312 32.14062,-21.40625 48.5625,-25.17188c16.40625,-3.76562 27.4375,-2.6875 27.4375,-2.6875c0,0 3.3125,-7.28125 5.46875,-10.76562c2.15625,-3.5 5.17187,-8.48438 9.21875,-10.90625c4.03125,-2.42188 11.82812,-5.98438 14.59375,-9.34375c2.75,-3.35938 8.76562,-7.20312 10.71875,-21.125c0,0 4,-22.32812 26.23438,-39.09375l1.76562,-0.90625c0,0 -0.85938,-0.29688 -4.9375,1.8125z"></path></g></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g></svg>
-      <form>
+      <form #loginFrom="ngForm" (ngSubmit)="onSubmit(loginFrom)" >
           
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In" id="submit">
+
+
+        <div class="alert alert-success" role="alert" *ngIf="status=='true'">
+          Bienvenido al sistema control de lacteos </div>
+         <div class="alert alert-danger" role="alert" *ngIf="status=='false'">
+           Su solicitud no fue procesada. Usuario o contraseña esta incorrecta 
+         </div>
+
+
+        <input type="text" #name="ngModel" [(ngModel)]="usersDTO.nombreUsuario" id="nombreUsuario" class="fadeIn second" name="login" placeholder="login">
+        <input type="text"  #name="ngModel" [(ngModel)]="usersDTO.password" id="password" class="fadeIn third" name="login" placeholder="password">
+        <input type="submit" class="fadeIn fourth" value="Entrar" id="submit" [disabled]="!loginFrom.form.valid">
       </form>
   
       <!-- Remind Passowrd -->

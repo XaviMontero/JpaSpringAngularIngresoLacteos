@@ -1,6 +1,7 @@
 package com.ucacue.ec.bo.impl;
 
  import com.ucacue.ec.bo.GenericCRUDService;
+ import com.ucacue.ec.persistence.entity.Users;
  import com.ucacue.ec.persistence.repository.BaseRepository;
  import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
@@ -43,9 +44,25 @@ public abstract class GenericCRUDServiceImpl<DOMAIN, DTO> implements GenericCRUD
 			return  T;
 		}else {
 			return null;
-
 		}
 
+	}
+
+	@Override
+	public DTO login(String user, String password) {
+		try{
+		DOMAIN T = repository.findLogin(user,password);
+
+		if (T!=null){
+			DTO S = build(T);
+			return  S;
+		}else {
+			return null;
+		}
+		}catch (NullPointerException ex){
+			return null;
+		}
 
 	}
+
 }

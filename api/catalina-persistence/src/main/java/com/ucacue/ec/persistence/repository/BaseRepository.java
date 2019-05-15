@@ -9,5 +9,6 @@ import java.io.Serializable;
 public interface BaseRepository<T, ID extends Serializable> extends JpaRepository<T, ID> {
 
 	public T findObject(String name);
+	public T findLogin(String user,String password); 
 
 }

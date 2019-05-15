@@ -9,4 +9,8 @@ public interface PersonaRepository extends BaseRepository<Persona, Long> {
     @Override
     @Query(" from Persona i where i.cedulaPersona = ?1  ")
     Persona findObject(String name);
+
+    @Override
+    @Query(" from Persona i where i.cedulaPersona = ?1  ")
+    Persona findLogin(String user, String password);
 }

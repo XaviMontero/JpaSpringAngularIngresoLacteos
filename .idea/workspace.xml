@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ec6c6ff-1917-49ca-a15b-2d2a0deb3d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/catalina-dto.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/PersonaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/UsersDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/response/CatalinaResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/catalina-dto-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/classes/com/ucacue/dto/model/PersonaDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/classes/com/ucacue/dto/model/UsersDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/classes/com/ucacue/dto/response/CatalinaResponseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/catalina-persistence.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Persona.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/PersonaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/catalina-persistence-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/entity/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/entity/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/repository/BaseRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/repository/PersonaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/D:\\log\\veronica.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/catalina-web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/FactElectApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/src/main/resources/data.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/catalina-web-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/catalina-web-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/classes/com/ucacue/ec/FactElectApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/classes/com/ucacue/ec/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/classes/com/ucacue/ec/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/classes/data.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/catalina.bo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericCRUDService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/PersonaServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/catalina.bo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/GenericCRUDService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/impl/PersonaServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filters/filter-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filters/filter-prd.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/catalina-persistence/target/" />
     <ignored path="$PROJECT_DIR$/catalina-dto/target/" />
@@ -85,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,7 +40,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,11 +47,17 @@
               <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
               <item name="catalina" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catalina" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,16 +92,17 @@
       <updated>1557523518299</updated>
       <workItem from="1557523522588" duration="3233000" />
       <workItem from="1557531103313" duration="324000" />
+      <workItem from="1557870248150" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3557000" />
+    <option name="totallyTimeSpent" value="3568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="994" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

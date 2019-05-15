@@ -23,4 +23,9 @@ public interface GenericCRUDService<DOMAIN, DTO> {
 	public DTO build(DOMAIN domainObject);
 
 	public DOMAIN getfindObject (String user);
+
+	public DTO login (String user , String password);
+
+
+
 }

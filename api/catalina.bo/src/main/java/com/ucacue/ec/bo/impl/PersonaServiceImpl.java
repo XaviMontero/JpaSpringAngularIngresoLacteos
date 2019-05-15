@@ -21,7 +21,14 @@ public class PersonaServiceImpl extends  GenericCRUDServiceImpl<Persona, Persona
     }
 
     @Override
-    public PersonaDTO build(Persona domainObject) {
-        return null;
+    public PersonaDTO build(Persona userDTO) {
+        PersonaDTO p = new PersonaDTO();
+        p.setCedulaPersona(userDTO.getCedulaPersona());
+        p.setNombrePersona(userDTO.getNombrePersona());
+        p.setApellidosPersona(userDTO.getApellidosPersona());
+        p.setTelefonoPersona(userDTO.getTelefonoPersona());
+        p.setDireccion(userDTO.getDireccion());
+        p.setEmailPersona(userDTO.getEmailPersona());
+        return p;
     }
 }
