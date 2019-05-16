@@ -39,7 +39,7 @@ export class RegistreComponent implements OnInit {
             console.log("Su ingreso "+ this.catalinaRespo.success);
             },
             error=>{
-                console.log("Su ingreso "+ this.catalinaRespo.success);
+               
              this.status="false";
              from.reset();
             }

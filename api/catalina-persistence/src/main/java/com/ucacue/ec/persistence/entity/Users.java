@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -25,5 +27,7 @@ public class Users {
     @JoinColumn(name = "cedula_persona", referencedColumnName = "cedula_persona")
     private Persona persona;
 
+    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Transaccion> transaccions = new ArrayList<>();
 
 }

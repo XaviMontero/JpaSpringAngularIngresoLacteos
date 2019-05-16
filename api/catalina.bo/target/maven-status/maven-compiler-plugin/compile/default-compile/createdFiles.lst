@@ -1,5 +1,8 @@
+com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.class
+com/ucacue/ec/bo/GenericCRUDService.class
 com/ucacue/ec/bo/impl/UserServiceImpl.class
 com/ucacue/ec/bo/impl/PersonaServiceImpl.class
-com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.class
+com/ucacue/ec/bo/impl/TransaccionServiceImpl.class
+com/ucacue/ec/bo/GenericTRANSService.class
+com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.class
 com/ucacue/ec/bo/validations/CedulaValidar.class
-com/ucacue/ec/bo/GenericCRUDService.class

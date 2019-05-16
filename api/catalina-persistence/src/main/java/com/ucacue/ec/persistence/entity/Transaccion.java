@@ -22,7 +22,7 @@ public class Transaccion {
     @Column
     private double cantidadIngreso;
     @Column
-    private boolean estadoPago;
+    private int estadoPago;
     @Column
     private int mes;
     @Column
@@ -32,5 +32,6 @@ public class Transaccion {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "digital_user_id", referencedColumnName = "digital_user_id")
     private Users users;
+
 
 }

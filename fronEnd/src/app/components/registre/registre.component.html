@@ -29,43 +29,31 @@
                                
                           <div class="col-sm">
                                 <input type="text" id="cedula" #name="ngModel" [(ngModel)]="personaDTO.cedulaPersona" class="fadeIn second" name="login" placeholder="cedula" required>
-                              <span *ngIf="!personaDTO.cedulaPersona.valid && personaDTO.cedulaPersona.touched ">
-                                    La cedula es obligatoria.
-                              </span>
+                        
                               </div>
                               
                           <div class="col-sm">
                                 <input type="text" id="nombres" #name="ngModel" [(ngModel)]="personaDTO.nombrePersona" class="fadeIn second" name="login" placeholder="nombres" required>
-                                <span *ngIf="!personaDTO.nombrePersona.valid && personaDTO.nombrePersona.touched ">
-                                          Nombre es obligatoria.
-                                    </span>
+                               
                               </div>
                           <div class="col-sm">
                                 <input type="text" id="apellidos" #name="ngModel" [(ngModel)]="personaDTO.apellidosPersona" class="fadeIn second" name="login" placeholder="apellidos" required>
-                                <span *ngIf="!personaDTO.apellidosPersona.valid && personaDTO.apellidosPersona.touched ">
-                                          Nombre es obligatoria.
-                                    </span>
+                                 
                         
                               </div>
                         </div>
                         <div class="row">
                                 <div class="col-sm">
                                       <input type="text" id="direccion" #name="ngModel" [(ngModel)]="personaDTO.direccion" class="fadeIn second" name="login" placeholder="direccion" required>
-                                      <span *ngIf="!personaDTO.direccion.valid && personaDTO.direccion.touched ">
-                                                direccion es obligatoria.
-                                          </span>
+                                       
                                     </div>
                                 <div class="col-sm">
                                       <input type="text" id="telefono" #name="ngModel" [(ngModel)]="personaDTO.telefonoPersona"  class="fadeIn second" name="login" placeholder="telefono" required>
-                                      <span *ngIf="!personaDTO.telefonoPersona.valid && personaDTO.telefonoPersona.touched ">
-                                                direccion es obligatoria.
-                                          </span>
+                                     
                                     </div>
                                 <div class="col-sm">
                                       <input type="text" #name="ngModel" [(ngModel)]="usersDTO.email" id="email" class="fadeIn second" name="login" placeholder="email" required>
-                                      <span *ngIf="!usersDTO.email.valid && usersDTO.email.touched ">
-                                                direccion es obligatoria.
-                                          </span>
+                                   
                               
                                     </div>
                               </div>
@@ -76,15 +64,11 @@
                               <div class="row">
                                     <div class="col-sm">
                                           <input type="text"  #name="ngModel" [(ngModel)]="usersDTO.nombreUsuario" id="user" class="fadeIn second" name="login" placeholder="user"required>
-                                          <span *ngIf="!usersDTO.nombreUsuario.valid && usersDTO.nombreUsuario.touched ">
-                                                      direccion es obligatoria.
-                                                </span>
+                                           
                                     </div>
                                     <div class="col-sm">
                                           <input type="text"  #name="ngModel" [(ngModel)]="usersDTO.password" id="Passowrd" class="fadeIn second" name="login" placeholder="password" required>
-                                          <span *ngIf="!usersDTO.password.valid && usersDTO.password.touched ">
-                                                      direccion es obligatoria.
-                                                </span>
+                                           
                                     </div>
                                     
                                   </div>

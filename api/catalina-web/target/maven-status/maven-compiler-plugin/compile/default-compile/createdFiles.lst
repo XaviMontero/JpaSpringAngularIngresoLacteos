@@ -1,3 +1,4 @@
+com/ucacue/ec/config/SwaggerConfig.class
+com/ucacue/ec/controller/TransaccionController.class
 com/ucacue/ec/FactElectApplication.class
 com/ucacue/ec/controller/UserController.class
-com/ucacue/ec/config/SwaggerConfig.class

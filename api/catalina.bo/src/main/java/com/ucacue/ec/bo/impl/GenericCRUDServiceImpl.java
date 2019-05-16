@@ -1,13 +1,11 @@
 package com.ucacue.ec.bo.impl;
 
  import com.ucacue.ec.bo.GenericCRUDService;
- import com.ucacue.ec.persistence.entity.Users;
  import com.ucacue.ec.persistence.repository.BaseRepository;
  import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
  import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 

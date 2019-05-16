@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ec6c6ff-1917-49ca-a15b-2d2a0deb3d14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9ec6c6ff-1917-49ca-a15b-2d2a0deb3d14" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/catalina-persistence/target/" />
     <ignored path="$PROJECT_DIR$/catalina-dto/target/" />
     <ignored path="$PROJECT_DIR$/catalina-web/target/" />
@@ -93,16 +91,17 @@
       <workItem from="1557523522588" duration="3233000" />
       <workItem from="1557531103313" duration="324000" />
       <workItem from="1557870248150" duration="11000" />
+      <workItem from="1557933250074" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3568000" />
+    <option name="totallyTimeSpent" value="3579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="994" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

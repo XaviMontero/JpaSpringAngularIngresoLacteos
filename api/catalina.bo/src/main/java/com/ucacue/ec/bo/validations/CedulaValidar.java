@@ -48,6 +48,7 @@ public class CedulaValidar {
 
         if (!cedulaCorrecta) {
             System.out.println("La Cédula ingresada es Incorrecta");
+            cedulaCorrecta = false;
         }
         return cedulaCorrecta;
     }
