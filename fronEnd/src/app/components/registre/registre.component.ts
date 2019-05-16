@@ -3,12 +3,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UsersDTO } from '../models/UsersDTO';
 import { PersonaDTO } from '../models/PersonaDTO';
 import { UsersDTOservices } from '../services/usersDTO.service';
+
 import {CatalinaResponseDTO}from '../models/CatalinaResponseDTO';
 @Component({
     selector: 'registre',
     templateUrl: './registre.component.html',
     styleUrls: ['./registre.component.sass'],
     providers: [UsersDTOservices]
+
 })
 export class RegistreComponent implements OnInit {
     public title: string;
@@ -16,7 +18,8 @@ export class RegistreComponent implements OnInit {
     public personaDTO: PersonaDTO;
     public catalinaRespo : CatalinaResponseDTO;
     public status: string; 
-    constructor(private _router: Router, private _activatedRoute: ActivatedRoute, private _usersDTOservices: UsersDTOservices) {
+ 
+    constructor(private _router: Router, private _activatedRoute: ActivatedRoute, private _usersDTOservices: UsersDTOservices ) {
         this.title = 'Hola Registre';
         this.personaDTO = new PersonaDTO("", "", "", "", "", "");
         this.usersDTO = new UsersDTO("", "", "", this.personaDTO);
@@ -44,5 +47,7 @@ export class RegistreComponent implements OnInit {
              from.reset();
             }
         );
+        
     }
+
 }

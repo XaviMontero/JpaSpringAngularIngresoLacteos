@@ -7,10 +7,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 import java.io.Serializable;
 import java.util.List;
-/* List<T> totalMesesLeche(int mesInicio,int mesFinal);
- List<T> totalAnioLeche( int anioFin);
- List<T> totaldeudaLeche(boolean estado);
- List<T> topMejoresClientes(boolean estado);*/
+
 
 @NoRepositoryBean
 public interface BaseRepositoryTran <T, ID extends Serializable> extends JpaRepository<T, ID> {

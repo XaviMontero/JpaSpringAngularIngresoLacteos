@@ -2,17 +2,14 @@ package com.ucacue.ec.bo.impl;
 
 
 
+import com.ucacue.dto.model.ReportesPorUsuarioDTO;
 import com.ucacue.ec.bo.GenericTRANSService;
-
 import com.ucacue.ec.persistence.repository.BaseRepositoryTran;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.stereotype.Service;
-
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
 public abstract class GenericTRANSServiceImpl <DOMAIN, DTO> implements GenericTRANSService<DOMAIN, DTO> {
@@ -56,7 +53,17 @@ public abstract class GenericTRANSServiceImpl <DOMAIN, DTO> implements GenericTR
     }
 
     @Override
-    public List<Object[]> getSumaDias(int mes) {
-        return repository.getSumaDias(mes);
+    public List<ReportesPorUsuarioDTO> getSumaDias(int mes) {
+
+        List<Object[]> objects= repository.getSumaDias(mes);
+        List<ReportesPorUsuarioDTO> reporte = new ArrayList<>();
+        for (Object o[]:objects){
+            ReportesPorUsuarioDTO as = new ReportesPorUsuarioDTO();
+            as.setCantidad((Double) o[0]);
+            as.setNombres((String) o[1]+" "+ o[2]);
+            reporte.add(as);
+
+        }
+        return reporte ;
     }
 }

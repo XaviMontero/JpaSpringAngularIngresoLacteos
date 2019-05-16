@@ -2,3 +2,4 @@ com/ucacue/dto/model/PersonaDTO.class
 com/ucacue/dto/model/UsersDTO.class
 com/ucacue/dto/response/CatalinaResponseDTO.class
 com/ucacue/dto/model/TransaccionDTO.class
+com/ucacue/dto/model/ReportesPorUsuarioDTO.class

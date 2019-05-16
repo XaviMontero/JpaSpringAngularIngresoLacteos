@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1648fa43-ec38-405c-b121-1d7d9c284a1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/TransaccionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/ReportGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/TransaccionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericTRANSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/TransaccionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/ReportesPorUsuarioDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/catalina-dto-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-dto/target/catalina-dto-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-dto/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-dto/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Transaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Transaccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/TransaccionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/TransaccionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/catalina-persistence-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/target/catalina-persistence-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/target/classes/com/ucacue/ec/persistence/entity/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/catalina-web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-web/target/catalina-web-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/catalina-web-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-web/target/catalina-web-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/validations/CedulaValidar.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/validations/CedulaValidar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/catalina.bo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/target/catalina.bo-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/validations/CedulaValidar.class" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/target/classes/com/ucacue/ec/bo/validations/CedulaValidar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronEnd/src/app/components/registre/registre.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../fronEnd/src/app/components/registre/registre.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronEnd/src/app/components/registre/registre.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../fronEnd/src/app/components/registre/registre.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericTRANSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericTRANSService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,32 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Transaccion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/TransaccionServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="240">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,12 +40,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/TransaccionRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="330">
+              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1#31#0" expanded="true" />
-                <element signature="e#0#95#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/ReportesPorUsuarioDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/ReportGenerate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="120">
               <caret line="9" column="24" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,14 +74,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/TransaccionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="240">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="92" column="65" lean-forward="true" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -134,11 +99,7 @@
         <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/PersonaRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-              <folding>
-                <element signature="e#1#42#0" expanded="true" />
-                <element signature="e#1#42#0" expanded="true" />
-              </folding>
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -146,14 +107,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1182#1183#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1320#1321#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="480">
               <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -174,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericTRANSService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="465">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,11 +177,12 @@
         <option value="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java" />
         <option value="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/ReportGenerate.java" />
         <option value="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/TransaccionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java" />
         <option value="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/TransaccionRepository.java" />
+        <option value="$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/TransaccionController.java" />
+        <option value="$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java" />
+        <option value="$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/ReportesPorUsuarioDTO.java" />
         <option value="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericTRANSService.java" />
         <option value="$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.java" />
-        <option value="$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/TransaccionController.java" />
       </list>
     </option>
   </component>
@@ -239,8 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,6 +259,51 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bo" type="462c0819:PsiDirectoryNode" />
               <item name="validations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina-dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina-dto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina-dto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina-dto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina-dto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="catalina-dto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="catalina" type="b2602c69:ProjectViewProjectNode" />
@@ -424,13 +426,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../veronica" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -481,14 +485,16 @@
       <workItem from="1557933266642" duration="846000" />
       <workItem from="1557934405124" duration="10264000" />
       <workItem from="1557982208901" duration="7179000" />
+      <workItem from="1558024456387" duration="3101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37562000" />
+    <option name="totallyTimeSpent" value="40663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="994" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27588046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -720,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="92" column="65" lean-forward="true" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -748,10 +747,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Transaccion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="330">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,8 +759,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/TransaccionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state relative-caret-position="315">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/ReportGenerate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -771,38 +780,14 @@
     <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/PersonaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/Transaccion.java">
+    <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/entity/ReportGenerate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        <state relative-caret-position="480">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -811,20 +796,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/TransaccionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="330">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1#31#0" expanded="true" />
-            <element signature="e#0#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericTRANSService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="465">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalina-persistence/src/main/java/com/ucacue/ec/persistence/repository/BaseRepositoryTran.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -833,25 +827,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericTRANSServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalina-dto/src/main/java/com/ucacue/dto/model/ReportesPorUsuarioDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/TransaccionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="240">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalina-web/src/main/java/com/ucacue/ec/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="92" column="65" lean-forward="true" selection-start-line="92" selection-start-column="65" selection-end-line="92" selection-end-column="65" />
         </state>
       </provider>
     </entry>

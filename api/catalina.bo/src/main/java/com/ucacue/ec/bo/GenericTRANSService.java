@@ -1,5 +1,6 @@
 package com.ucacue.ec.bo;
 
+import com.ucacue.dto.model.ReportesPorUsuarioDTO;
 import com.ucacue.ec.persistence.entity.ReportGenerate;
 
 import java.util.List;
@@ -27,6 +28,7 @@ public interface GenericTRANSService<DOMAIN, DTO>  {
     public List<DTO> ganaciasDia(int mes );
 
     List<Double> sumaIngreso(int mes );
-    List<Object[]> getSumaDias(int mes );
+
+    List<ReportesPorUsuarioDTO> getSumaDias(int mes );
 
 }
