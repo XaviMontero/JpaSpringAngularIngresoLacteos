@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit{
     
     ngOnInit(){
         console.log("Cargado componentes login");
+        
     }
     onSubmit(from) {
         this._usersDTOservices.login(this.usersDTO).subscribe(
@@ -40,26 +41,20 @@ export class LoginComponent implements OnInit{
                 if (this.catalinaRespo.success){
                     this.status="true"; 
                     from.reset();
-
-                    this._reportesDTOservices.reporteUsuario(1).subscribe(
-                        response=>{
-                                this.listReport=response; 
-                                console.log(this.listReport);
-                        },error =>{
-                              this.status="false";
-                         from.reset();
-                        
-                        }
-                    )
-
+                    localStorage.setItem('estado',this.status);
+                    this._router.navigate(['/']);
                 }else {
                     this.status="false";
+                    localStorage.setItem('estado',this.status);
                     from.reset();
                 }
             console.log("Su ingreso "+ this.catalinaRespo.success);
             },
             error=>{
                 console.log("Su ingreso "+ this.catalinaRespo.success);
+                localStorage.setItem('estado',this.status);
+
+                
              this.status="false";
              from.reset();
             }

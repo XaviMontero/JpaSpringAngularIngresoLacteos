@@ -24,4 +24,15 @@ import {GLOBAL} from './global';
         return this._http.post(this.url+usersDTO.nombreUsuario+"+"+usersDTO.password+'/login',params,{headers:headers});
      } 
 
+     getStatus(){
+         let estado = localStorage.getItem('estado');
+         if(estado=="true"){
+            estado="true";
+
+         }else if(estado=="false"){
+             estado="false"; 
+         }
+         return estado; 
+
+     }
  }
