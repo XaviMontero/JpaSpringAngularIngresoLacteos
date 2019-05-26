@@ -14,7 +14,7 @@ public class Transaccion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "digital_tran_generator")
-    @SequenceGenerator(name = "digital_tran_generator", sequenceName = "digital_tran_id", allocationSize = 2)
+    @SequenceGenerator(name = "digital_tran_generator", sequenceName = "digital_tran_generator", allocationSize = 2)
     @Column(name = "digital_tran_id", updatable = false, nullable = false)
     private long id;
     @Column

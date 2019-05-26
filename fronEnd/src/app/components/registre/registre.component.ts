@@ -39,6 +39,7 @@ export class RegistreComponent implements OnInit {
                 if (this.catalinaRespo.success){
                     this.status="true"; 
                     from.reset();
+                    this._router.navigate(['/']);
 
                 }else {
                     this.status="false";

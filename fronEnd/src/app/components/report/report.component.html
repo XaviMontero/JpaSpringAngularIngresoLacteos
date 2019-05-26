@@ -1,15 +1,39 @@
-<div>
-    <div>
-      <div style="display: block">
-        <canvas baseChart
-          [datasets]="barChartData"
-          [labels]="barChartLabels"
-          [options]="barChartOptions"
-          [plugins]="barChartPlugins"
-          [legend]="barChartLegend"
-          [chartType]="barChartType">
-        </canvas>
-      </div>
-      <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+<link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+<div class="container">
+  <div class="row">
+      <div class="col-sm">
+          </div>
+        </div>
+    <div class="row">
+       
+        <div class="col-sm">
+            <h1>Reporte de clientes del mes</h1>
+        <div style="display: block">
+         <canvas baseChart
+         [datasets]="barChartData"
+         [labels]="barChartLabels"
+         [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
     </div>
   </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <h1>Reporte de Zonas</h1>
+    <div style="display: block">
+    <canvas baseChart
+    [datasets]="barChartData2"
+    [labels]="barChartLabels2"
+    [options]="barChartOptions2"
+    [plugins]="barChartPlugins2"
+    [legend]="barChartLegend2"
+    [chartType]="barChartType2">
+    </canvas>
+    </div>
+    </div>
+
+</div>
+</div>

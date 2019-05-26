@@ -1,5 +1,6 @@
 package com.ucacue.ec.bo;
 
+import com.ucacue.dto.model.ReportePorZonasDTO;
 import com.ucacue.dto.model.ReportesPorUsuarioDTO;
 import com.ucacue.ec.persistence.entity.ReportGenerate;
 
@@ -30,5 +31,6 @@ public interface GenericTRANSService<DOMAIN, DTO>  {
     List<Double> sumaIngreso(int mes );
 
     List<ReportesPorUsuarioDTO> getSumaDias(int mes );
+    List<ReportePorZonasDTO> getSumaZonas(int mes );
 
 }

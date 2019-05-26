@@ -16,5 +16,5 @@ public class TransaccionDTO {
     private int mes;
     private int dia;
     private  int anio;
-    private UsersDTO users;
+    private UsersDTO usersDTO;
 }

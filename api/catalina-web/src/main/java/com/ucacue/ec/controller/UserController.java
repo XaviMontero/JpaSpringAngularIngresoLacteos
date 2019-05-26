@@ -24,7 +24,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/api/v1.0/user")
-@CrossOrigin(origins = "http://192.168.1.138:4200")
+@CrossOrigin(origins = "http://localhost:4200")
 @Api(description = "Crear Un usuario en linea ")
 public class UserController {
     public static final String API_DOC_ANEXO_1 = "Ver ficha técnica - Anexo 1";
@@ -97,11 +97,19 @@ public class UserController {
             if (userService.login(user,password)!=null){
                 response.setSuccess(true);
                 return (new ResponseEntity<Object>(response, headers, HttpStatus.OK));
-
             }else {
                 response.setSuccess(false);
                 return (new ResponseEntity<Object>(response, headers, HttpStatus.OK));
-
             }
+    }
+
+    @ApiOperation(value = "Retorna un usuario completo para su transaccion ")
+    @GetMapping(value = "{cedula}/buscar-user", produces = { MediaType.APPLICATION_JSON_VALUE,
+            MediaType.APPLICATION_JSON_VALUE })
+    public ResponseEntity<Object> getUserDTO(
+            @Valid @ApiParam(value = "Cedula de verificacion", required = true) @PathVariable("cedula") String cedula) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
+        return (new ResponseEntity<Object>(userService.findTrans(cedula), headers, HttpStatus.OK));
     }
 }

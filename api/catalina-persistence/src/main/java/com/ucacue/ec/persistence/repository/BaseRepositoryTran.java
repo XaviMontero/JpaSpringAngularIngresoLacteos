@@ -15,5 +15,6 @@ public interface BaseRepositoryTran <T, ID extends Serializable> extends JpaRepo
     List<T> totalDiasLeche(int id);
     List<Double> sumaDIas(int id) throws NullPointerException;
     List<Object[]> getSumaDias(int mes );
+    List<Object[]> getSumaZonas(int mes );
 
 }

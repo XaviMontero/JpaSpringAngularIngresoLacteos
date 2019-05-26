@@ -63,4 +63,21 @@ public abstract class GenericCRUDServiceImpl<DOMAIN, DTO> implements GenericCRUD
 
 	}
 
+	@Override
+	public DTO findTrans(String ceudla) {
+		try{
+			DOMAIN T = repository.findTran(ceudla);
+
+			if (T!=null){
+				DTO S = build(T);
+				return  S;
+			}else {
+				return null;
+			}
+		}catch (NullPointerException ex){
+			return null;
+		}
+
+
+	}
 }

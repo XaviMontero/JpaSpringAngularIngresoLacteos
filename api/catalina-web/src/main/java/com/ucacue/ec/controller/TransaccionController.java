@@ -2,6 +2,7 @@ package com.ucacue.ec.controller;
 
 import com.ucacue.dto.model.TransaccionDTO;
 import com.ucacue.dto.model.UsersDTO;
+import com.ucacue.dto.response.CatalinaResponseDTO;
 import com.ucacue.ec.bo.GenericTRANSService;
 import com.ucacue.ec.bo.validations.CedulaValidar;
 import com.ucacue.ec.persistence.entity.Transaccion;
@@ -20,7 +21,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/api/v1.0/transaccion")
-@CrossOrigin(origins = "http://192.168.1.138:4200")
+@CrossOrigin(origins = "http://localhost:4200")
 @Api(description = "Generar Reportes transacciones ")
 public class TransaccionController {
     public static final String API_DOC_ANEXO_1 = "Ver ficha técnica - Anexo 1";
@@ -60,4 +61,27 @@ public class TransaccionController {
         headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
         return (new ResponseEntity<Object>(transService.getSumaDias(mes), headers, HttpStatus.OK));
     }
+
+    @ApiOperation(value = "Almacena una transaccion")
+    @PostMapping(value = "create-trans", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Object> insertTransa(
+            @Valid @ApiParam(value = API_DOC_ANEXO_1, required = true) @RequestBody TransaccionDTO transaccionDTO) {
+        CatalinaResponseDTO response = new CatalinaResponseDTO();
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
+        transService.saveOrUpdate(transaccionDTO);
+        response.setSuccess(true);
+        return (new ResponseEntity<Object>(response, headers, HttpStatus.OK));
+
+    }
+    @ApiOperation(value = "Almacena un usuario en base de datos ")
+    @GetMapping(value = "{mes}/reporte-zona", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Object> reportesZona(
+            @Valid @ApiParam(value = API_DOC_ANEXO_1, required = true) @PathVariable("mes") int mes
+    ){
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_TYPE, "application/json; charset=UTF-8");
+        return (new ResponseEntity<Object>(transService.getSumaZonas(mes), headers, HttpStatus.OK));
+    }
+
 }

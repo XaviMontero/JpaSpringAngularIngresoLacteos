@@ -2,6 +2,7 @@ package com.ucacue.ec.bo.impl;
 
 
 
+import com.ucacue.dto.model.ReportePorZonasDTO;
 import com.ucacue.dto.model.ReportesPorUsuarioDTO;
 import com.ucacue.ec.bo.GenericTRANSService;
 import com.ucacue.ec.persistence.repository.BaseRepositoryTran;
@@ -65,5 +66,19 @@ public abstract class GenericTRANSServiceImpl <DOMAIN, DTO> implements GenericTR
 
         }
         return reporte ;
+    }
+
+    @Override
+    public List<ReportePorZonasDTO> getSumaZonas(int mes) {
+        List<Object[]> objects= repository.getSumaZonas(mes);
+        List<ReportePorZonasDTO> reporte = new ArrayList<>();
+        for (Object o[]:objects){
+            ReportePorZonasDTO zonas = new ReportePorZonasDTO();
+            zonas.setDia((int) o[0]);
+            zonas.setTotal((Double) o[1]);
+            zonas.setDireccion((String) o[2]);
+            reporte.add(zonas);
+        }
+        return reporte;
     }
 }

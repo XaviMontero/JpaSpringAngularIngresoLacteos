@@ -10,13 +10,15 @@ import { ChartsModule } from 'ng2-charts';
 import {RegistreComponent} from './components/registre/registre.component';
 import {LoginComponent} from './components/login/login.component'; 
 import {ReportComponent} from './components/report/report.component'; 
+import {InsertComponent} from './components/insert/insert.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistreComponent,
     LoginComponent,
-    ReportComponent
+    ReportComponent,
+    InsertComponent
   ],
   imports: [
     BrowserModule,

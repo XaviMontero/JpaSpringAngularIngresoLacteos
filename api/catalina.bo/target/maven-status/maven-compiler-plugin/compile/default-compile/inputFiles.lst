@@ -3,6 +3,7 @@
 /media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/TransaccionServiceImpl.java
 /media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/validations/CedulaValidar.java
 /media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/UserServiceImpl.java
+/media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/validations/FechaValidar.java
 /media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/GenericCRUDService.java
 /media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/PersonaServiceImpl.java
 /media/xavi/archivos-xavi/xavi/git/catalina/api/catalina.bo/src/main/java/com/ucacue/ec/bo/impl/GenericCRUDServiceImpl.java

@@ -33,6 +33,12 @@ import {GLOBAL} from './global';
              estado="false"; 
          }
          return estado; 
-
+     }
+     getUserCedula(cedula: String): Observable<any> {
+        let params = JSON.stringify(cedula); 
+        console.log(params);
+        return this._http.get(this.url+cedula+'/buscar-user');
+        
+  
      }
  }

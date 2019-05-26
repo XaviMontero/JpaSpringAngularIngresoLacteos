@@ -11,5 +11,5 @@ public interface BaseRepository<T, ID extends Serializable> extends JpaRepositor
 	public T findObject(String name);
 	public T findLogin(String user,String password);
 
-
+	public T findTran(String cedula);
 }

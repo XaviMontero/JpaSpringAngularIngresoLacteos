@@ -26,6 +26,7 @@ public interface GenericCRUDService<DOMAIN, DTO> {
 
 	public DTO login (String user , String password);
 
+    public  DTO findTrans(String ceudla );
 
 
 }
