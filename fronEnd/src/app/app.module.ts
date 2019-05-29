@@ -11,6 +11,7 @@ import {RegistreComponent} from './components/registre/registre.component';
 import {LoginComponent} from './components/login/login.component'; 
 import {ReportComponent} from './components/report/report.component'; 
 import {InsertComponent} from './components/insert/insert.component'; 
+import {PagosComponent} from './components/pagos/pagos.component'; 
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {InsertComponent} from './components/insert/insert.component';
     RegistreComponent,
     LoginComponent,
     ReportComponent,
-    InsertComponent
+    InsertComponent,
+    PagosComponent
   ],
   imports: [
     BrowserModule,
